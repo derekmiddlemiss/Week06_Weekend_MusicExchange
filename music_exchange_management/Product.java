@@ -2,7 +2,7 @@ package music_exchange_management;
 import behaviours.*;
 
 
-public class Product implements Sellable{
+public abstract class Product implements Sellable{
 
   protected double buyPrice;
   protected double sellPrice;

@@ -4,11 +4,11 @@ import music_exchange_management.*;
 
 public class ProductTest{
 
-  Product drumSticks;
+  DrumSticks drumSticks;
 
   @Before
   public void before(){
-    drumSticks = new Product( 8.00, 11.99, "Yamaha ES209 Drumsticks" );
+    drumSticks = new DrumSticks( 8.00, 11.99, "Yamaha ES209 Drumsticks" );
   }
 
   @Test
