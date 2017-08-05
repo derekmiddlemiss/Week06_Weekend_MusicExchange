@@ -4,7 +4,7 @@ public class Guitar extends Instrument{
 
   private int numStrings;
 
-  public Guitar( double buyPrice, double sellPrice, String identifier, String material, String colour, String type, String noise, int numStrings ){
+  public Guitar( double buyPrice, double sellPrice, String identifier, String material, String colour, InstrumentType type, String noise, int numStrings ){
     super( buyPrice, sellPrice, identifier, material, colour, type, noise );
     this.numStrings = numStrings;
   }
@@ -13,6 +13,6 @@ public class Guitar extends Instrument{
     return this.numStrings;
   }
 
-  
+
 
 }

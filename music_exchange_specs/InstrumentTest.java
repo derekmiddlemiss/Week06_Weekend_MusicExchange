@@ -8,7 +8,7 @@ public class InstrumentTest{
 
   @Before
   public void before(){
-    fenderBender = new Guitar( 300.00, 499.99, "Fender NoteBender21", "Beechwood", "Red", "String", "Thrum", 6 );
+    fenderBender = new Guitar( 300.00, 499.99, "Fender NoteBender21", "Beechwood", "Red", InstrumentType.STRING, "Thrum", 6 );
   }
 
   //Test two interface methods

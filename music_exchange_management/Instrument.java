@@ -5,10 +5,10 @@ public abstract class Instrument extends Product implements Playable{
 
   protected String material;
   protected String colour;
-  protected String type; 
+  protected InstrumentType type; 
   protected String noise;
 
-  public Instrument( double buyPrice, double sellPrice, String identifier, String material, String colour, String type, String noise ){
+  public Instrument( double buyPrice, double sellPrice, String identifier, String material, String colour, InstrumentType type, String noise ){
     super( buyPrice, sellPrice, identifier );
     this.material = material;
     this.colour = colour;
@@ -30,7 +30,7 @@ public abstract class Instrument extends Product implements Playable{
   }
 
   public String getType(){
-    return this.type;
+    return this.type.toString();
   }
 
 }
