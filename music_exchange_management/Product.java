@@ -22,4 +22,20 @@ public class Product implements Sellable{
     return this.buyPrice;
   }
 
+  public double getSellPrice(){
+    return this.sellPrice;
+  }
+
+  public String getIdentifier(){
+    return this.identifier;
+  }
+
+  public void setSellPrice( double sellPrice ){
+    this.sellPrice = sellPrice;
+  }
+
+  public void setIdentifier( String identifier ){
+    this.identifier = identifier;
+  }
+
 }
