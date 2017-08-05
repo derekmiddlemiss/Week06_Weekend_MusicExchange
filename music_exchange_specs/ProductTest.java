@@ -12,8 +12,13 @@ public class ProductTest{
   }
 
   @Test
+  public void testCalculateMarkup(){
+    assertEquals( 3.99, drumSticks.calculateMarkup(), 0.001 );
+  }
+
+  @Test
   public void testGetBuyPrice(){
-    assertEquals( 8.00, drumSticks.getBuyPrice() );
+    assertEquals( 8.00, drumSticks.getBuyPrice(), 0.001 );
   } 
 
 }
