@@ -30,4 +30,18 @@ public class ShopTest{
     assertEquals( 1, rainbowMusic.stockCount() );
   }
 
+  @Test
+  public void canCalculateMaxProfitFromStock(){
+    rainbowMusic.addToStock( fenderBender );
+    rainbowMusic.addToStock( drumSticks );
+    assertEquals( 203.98, rainbowMusic.calculateMaxProfit(), 0.001 );
+  }
+
+  @Test
+  public void removeNonexistentItem(){
+    rainbowMusic.addToStock( drumSticks );
+    assertEquals( false, rainbowMusic.removeFromStock( fenderBender ) );
+  }
+
+
 }
